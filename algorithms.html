@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algorithms and Data Structures Enhancement</title>
+</head>
+<body>
+
+<h1>Algorithms and Data Structures Enhancement</h1>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="code-review.html">Code Review</a> |
+  <a href="software-engineering.html">Software Engineering</a> |
+  <a href="algorithms.html">Algorithms and Data Structures</a> |
+  <a href="databases.html">Databases</a> |
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+<hr>
+
+<h2>Enhancement Summary</h2>
+<p>This enhancement focused on using algorithms and data structures to make inventory data easier to search, sort, and prioritize.</p>
+
+<ul>
+  <li>Added search by part number, item name, and description</li>
+  <li>Added sorting by part number, description, quantity, and newest items</li>
+  <li>Added low-stock prioritization using a PriorityQueue</li>
+  <li>Improved usability and decision-making in the application</li>
+</ul>
+
+<h2>Narrative</h2>
+
+<p>Artifact Description
+
+The artifact I selected for this enhancement is my Android Inventory Management Application that I originally created in CS 360. The application was designed to help users track inventory items, quantities, and inventory activity through a mobile interface. For my CS 499 Capstone project, I continued enhancing this application to demonstrate growth in multiple areas of computer science. For Milestone Three, I focused specifically on algorithms and data structures by adding new functionality that improves how inventory data is organized, searched, sorted, and prioritized.
+
+Justification for Inclusion in My ePortfolio
+
+I selected this artifact because it provides a good example of how software can evolve over time through multiple enhancements. The application already contained core inventory management features, but it also provided opportunities to implement algorithms and data structures that improve the user experience and make inventory data easier to work with.
+
+For this enhancement, I added three major features. The first was a search function that allows users to search inventory items by part number, item name, or description. This enhancement uses an ArrayList data structure and a filtering algorithm that loops through the inventory records and returns matching results.
+
+The second enhancement was inventory sorting. Users can now sort inventory items by part number, description, quantity from low to high, quantity from high to low, or newest items first. This feature uses Java collections and comparator-based sorting algorithms to organize inventory records in different ways depending on user needs.
+
+The third enhancement was a low stock priority report. This report identifies inventory items that have fallen below a selected threshold and prioritizes them based on quantity available. To accomplish this, I implemented a PriorityQueue data structure. The PriorityQueue automatically organizes inventory items from lowest quantity to highest quantity, making it easier to identify inventory that needs attention first.
+
+The search functionality uses a linear search through an ArrayList, resulting in a time complexity of O(n) because each inventory item may need to be examined to find matching records. The sorting functionality uses Java comparator-based sorting, which generally performs at O(n log n) complexity. The PriorityQueue used in the low stock report allows inventory items to be automatically prioritized based on quantity available, providing a more efficient solution than manually reviewing inventory records.
+
+These enhancements demonstrate my ability to apply algorithmic principles and data structures to solve real business problems. Instead of simply displaying inventory data, the application now performs searches, sorting operations, and prioritization to help users make decisions more efficiently.
+
+Course Outcomes
+
+This enhancement supports the course outcome of designing and evaluating computing solutions that solve problems using algorithmic principles and computer science practices. The search, sorting, and low stock prioritization features all rely on algorithms and data structures to process information and present meaningful results to the user.
+
+The enhancement also supports the outcome of demonstrating the ability to use computing tools and techniques to deliver value through software solutions. The new functionality improves usability and provides practical features that would be useful in a real inventory management environment.
+
+At this time, I believe I am making strong progress toward the outcomes identified in my Module One plan. The software engineering enhancements completed in Milestone Two and the algorithms and data structures enhancements completed in Milestone Three work together to demonstrate growth across multiple areas of computer science.
+
+Reflection
+
+One of the biggest things I learned during this enhancement was how much impact data structures can have on application functionality. Before making these changes, the application simply displayed inventory records that were retrieved from the database. After implementing the search, sorting, and prioritization features, the application is able to organize and process data in ways that make it more useful to the user.
+
+Before these enhancements, users could only view inventory records in the order they were displayed by the application. After the enhancements, users can search for specific items, sort inventory in multiple ways, and automatically identify low-stock items that require attention. These changes significantly improved the usefulness of the application while demonstrating practical applications of algorithms and data structures.
+
+A challenge I faced was making sure that all of the new features worked together correctly. Search results needed to continue working after items were edited, deleted, or picked from inventory. Sorting also needed to work correctly with filtered search results. This required updating the application workflow so that inventory data would refresh properly after changes were made.
+
+Another challenge was implementing the low stock report using a PriorityQueue. I spent time researching how priority queues work and how they could be applied to an inventory management system. Through testing, I was able to verify that inventory items were being prioritized correctly based on quantity available.
+
+Testing was an important part of this enhancement. After implementing each feature, I tested adding inventory items, searching for records, sorting inventory using different options, editing inventory quantities, and generating low stock reports using different thresholds. This helped ensure that the algorithms produced the expected results and that the application remained stable after the changes were introduced.
+
+This enhancement helped me gain a better understanding of how algorithms and data structures can be used in real-world software applications. It also showed me the importance of considering how different parts of an application interact when new functionality is added. The final result is a more capable inventory management application that demonstrates both technical knowledge and practical problem-solving skills.
+</p>
+
+</body>
+</html>
