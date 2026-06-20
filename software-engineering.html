@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Software Engineering Enhancement</title>
+</head>
+<body>
+
+<h1>Software Design and Engineering Enhancement</h1>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="code-review.html">Code Review</a> |
+  <a href="software-engineering.html">Software Engineering</a> |
+  <a href="algorithms.html">Algorithms and Data Structures</a> |
+  <a href="databases.html">Databases</a> |
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+<hr>
+
+<h2>Enhancement Summary</h2>
+<p>This enhancement focused on improving the Android Inventory Management Application through better software design, expanded functionality, validation improvements, and a more realistic inventory workflow.</p>
+
+<ul>
+  <li>Added part numbers and descriptions</li>
+  <li>Added inventory picking functionality</li>
+  <li>Added RMA or ticket number tracking</li>
+  <li>Added usage reporting</li>
+  <li>Improved validation and application workflow</li>
+</ul>
+
+<h2>Narrative</h2>
+
+<p>The artifact I selected for this enhancement is my Inventory Management App that I originally created in CS 360. This app was built in Android Studio using Java, XML layouts, and a SQLite database. The original purpose of the app was to let a user log in and manage inventory items by adding, deleting, and updating quantities. It also had SMS notification features for low inventory. I chose this artifact because it was a good starting point, but it also had a lot of room to be improved into something more realistic and useful.
+
+I included this artifact in my ePortfolio because it shows skills that connect directly to software design and engineering. It shows that I can build a working mobile application, connect the app to a database, design screens for users, and use Java classes to organize the logic. I also liked that this project gave me a chance to improve existing code instead of starting completely from scratch. That feels more realistic because in the workplace, a lot of development work involves updating and improving systems that already exist.
+
+For this enhancement, I made the inventory system more detailed and more useful. One of the first improvements I made was updating the inventory items so they now include a part number and a description, instead of only having an item name and quantity. This makes the app feel more like a real inventory system because parts are usually tracked by part number, not just by name. I also updated the database so it could store this new information.
+
+Another major improvement I added was picking functionality. The app now allows a user to pick a part from inventory, which reduces the current quantity. When a part is picked, the user also enters an RMA or ticket number. This was important because it connects the inventory movement to a real support request. I also added validation so the user cannot pick more items than are available and cannot enter invalid quantities. This helps protect the accuracy of the inventory data.
+
+I also added a pick history table to the database. Each time a part is picked, the app saves the part number, part name, quantity picked, RMA or ticket number, and the date. This was an important improvement because it creates a record of what happened instead of only changing the inventory quantity. This makes the app more useful for tracking, auditing, and reporting.
+
+The last main feature I added for this milestone was a basic usage report. The report lets the user enter a start date and end date, and then it shows how many parts were used during that time period. I also added detail lines for each RMA or ticket number that was entered when the part was picked. This gives both a summary view and a more detailed view of the inventory activity.
+
+From a software design perspective, the application follows a structured architecture that separates responsibilities between the user interface, business logic, and database layers. The InventoryActivity serves as the primary interface where users interact with inventory records. The InventoryAdapter is responsible for displaying inventory information within the RecyclerView, while the DatabaseHelper class manages database operations and data persistence. When new inventory items are added, edited, or picked, the application validates user input before updating the database and refreshing the displayed data. This separation of responsibilities improves maintainability and makes future enhancements easier to implement.
+
+While working on this enhancement, I also realized that picking directly from the inventory screen is probably not the final design I want. It works well for this milestone as a proof of concept, but a better long-term design would be to create a full RMA Work Order section. In that setup, the user would create an RMA Work Order, add parts to it, and then handle picking and receiving from that work order. That would better match how this type of system would work in a real support or inventory environment.
+
+This enhancement connects to the course outcomes I planned to work on because it shows software engineering, database design, problem-solving, and professional communication. I improved the app by adding new features, changing the database structure, updating Java classes, improving validation, and making the workflow more useful. I also had to think about how the design could grow in the future instead of only focusing on what worked right now.
+
+One challenge I ran into was that changing the database and model class affected other parts of the app. For example, once I added part numbers and descriptions, I also had to update the adapter, activity code, and database methods so everything worked together. This helped me better understand how connected different parts of an application are. It also reminded me why planning and clean code structure are important.
+
+Testing was completed throughout development to ensure the new functionality worked correctly. I tested adding inventory items, editing records, picking inventory, generating usage reports, and verifying that database updates occurred as expected. I also tested validation rules to ensure users could not enter invalid quantities or pick more inventory than was available. This process helped identify issues early and improved the overall reliability of the application.
+
+This enhancement made the original Inventory Management App much stronger. It went from being a simple inventory tracker to the beginning of a more realistic inventory and RMA tracking system. I think this artifact is a good fit for my ePortfolio because it shows my ability to improve an existing project, add useful features, and make design decisions that support future growth.
+</p>
+
+</body>
+</html>
