@@ -1,58 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algorithms and Data Structures Enhancement</title>
+</head>
+<body>
+
+<h1>Algorithms and Data Structures Enhancement</h1>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="code-review.html">Code Review</a> |
+  <a href="software-engineering.html">Software Engineering</a> |
+  <a href="algorithms.html">Algorithms and Data Structures</a> |
+  <a href="databases.html">Databases</a> |
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+<hr>
+
+<h2>Enhancement Summary</h2>
+
+<p>
+This enhancement focused on improving the Android Inventory Management Application through better searching, sorting, and inventory prioritization features.
+</p>
+
+<ul>
+  <li>Added inventory search functionality</li>
+  <li>Added sorting options for inventory records</li>
+  <li>Implemented low-stock prioritization</li>
+  <li>Improved information retrieval and organization</li>
+  <li>Enhanced decision-making for inventory management</li>
+</ul>
+
+<h3>Skills Demonstrated</h3>
+
+<ul>
+  <li>ArrayList Implementation</li>
+  <li>Linear Search Algorithms</li>
+  <li>Comparator-Based Sorting</li>
+  <li>PriorityQueue Implementation</li>
+  <li>Algorithm Analysis</li>
+</ul>
+
 <h2>Narrative</h2>
 
 <h3>Artifact Description</h3>
 
 <p>
-The artifact I selected for this enhancement is my Android Inventory Management Application that I originally created in CS 360. For this milestone, I focused on algorithms and data structures by improving how inventory data is searched, sorted, and prioritized.
+The artifact I selected for this enhancement is my Android Inventory Management Application that I originally created in CS 360. The application allows users to manage inventory records through a mobile interface connected to a SQLite database. For this milestone, I focused on improving how inventory information is organized, searched, and prioritized through the use of algorithms and data structures.
 </p>
 
 <h3>Justification for Inclusion</h3>
 
 <p>
-I selected this artifact because it provided a strong opportunity to implement practical algorithms and data structures within an existing application. The original application contained inventory management features, but lacked advanced methods for organizing and retrieving information efficiently.
+I selected this artifact because it provided a strong opportunity to implement practical algorithms and data structures in a real-world application. While the original version allowed users to add and manage inventory records, it lacked advanced methods for finding, organizing, and prioritizing information. These enhancements demonstrate how data structures and algorithms can improve both usability and efficiency.
 </p>
 
 <h3>Enhancements Implemented</h3>
 
 <p>
-The first enhancement was a search feature that allows users to locate inventory items using part numbers, item names, or descriptions. This feature uses an ArrayList and a filtering algorithm that performs a linear search through inventory records.
+The first enhancement was the addition of a search feature. Users can now search inventory items by part number, item name, or description. This functionality uses an ArrayList and a filtering algorithm that performs a linear search through inventory records to locate matching results.
 </p>
 
 <p>
-The second enhancement was inventory sorting. Users can now sort inventory by part number, description, quantity, or newest items first. This functionality uses comparator-based sorting provided through Java collections.
+The second enhancement was the addition of sorting functionality. Users can sort inventory records by part number, description, quantity, or newest items first. This feature uses comparator-based sorting through Java collections to organize information according to user needs.
 </p>
 
 <p>
-The third enhancement was a low-stock priority report that uses a PriorityQueue to automatically prioritize inventory items based on available quantity.
+The third enhancement was the creation of a low-stock reporting feature. This report uses a PriorityQueue to automatically prioritize inventory items based on quantity levels, ensuring that the lowest inventory items appear first.
 </p>
 
 <h3>Algorithms and Data Structures Used</h3>
 
 <ul>
-<li>ArrayList for inventory storage and searching</li>
-<li>Linear Search with O(n) complexity</li>
-<li>Comparator-Based Sorting with O(n log n) complexity</li>
-<li>PriorityQueue for low-stock prioritization</li>
+  <li>ArrayList for inventory storage and retrieval</li>
+  <li>Linear Search with O(n) complexity</li>
+  <li>Comparator-Based Sorting with O(n log n) complexity</li>
+  <li>PriorityQueue for low-stock prioritization</li>
 </ul>
 
 <h3>Course Outcome Alignment</h3>
 
 <p>
-These enhancements demonstrate the use of algorithmic principles and data structures to solve practical inventory management problems. The application now processes information more effectively and helps users make decisions using prioritized and organized data.
+These enhancements demonstrate the use of algorithmic principles and data structures to solve practical inventory management problems. The application now provides users with faster access to information and improved organization of inventory records. The use of searching, sorting, and prioritization techniques aligns directly with the Computer Science program outcome focused on designing and evaluating computing solutions using algorithmic principles.
 </p>
 
 <h3>Challenges and Testing</h3>
 
 <p>
-A challenge I faced was ensuring that search results continued working correctly after inventory updates, edits, and deletions. Sorting functionality also needed to remain compatible with filtered search results.
+One challenge I faced was ensuring that search results remained accurate after inventory records were added, edited, or deleted. I also needed to verify that sorting continued to work correctly alongside the search functionality. Testing included searching for inventory records, sorting data using different methods, updating inventory quantities, and generating low-stock reports with different thresholds.
 </p>
 
 <p>
-Testing included searching for inventory records, sorting using different methods, updating quantities, and generating low-stock reports with different thresholds to verify accurate results.
+I verified that inventory records appeared correctly in search results, that sorting organized data properly, and that the PriorityQueue consistently prioritized the lowest inventory quantities first.
 </p>
 
 <h3>Reflection</h3>
 
 <p>
-This enhancement helped me better understand how algorithms and data structures impact software usability. The final result is a more capable inventory application that demonstrates practical applications of searching, sorting, and prioritization techniques.
+This enhancement helped me better understand how algorithms and data structures affect software usability and performance. By implementing search, sorting, and prioritization features, I was able to transform the application into a more useful inventory management solution. This project reinforced the importance of selecting appropriate data structures and algorithms to solve real-world problems efficiently.
 </p>
+
+</body>
+</html>
