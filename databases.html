@@ -1,59 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Enhancement</title>
+</head>
+<body>
+
+<h1>Database Enhancement</h1>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="code-review.html">Code Review</a> |
+  <a href="software-engineering.html">Software Engineering</a> |
+  <a href="algorithms.html">Algorithms and Data Structures</a> |
+  <a href="databases.html">Databases</a> |
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+<hr>
+
+<h2>Enhancement Summary</h2>
+
+<p>
+This enhancement focused on expanding the database capabilities of the Android Inventory Management Application by implementing historical inventory tracking and reporting functionality.
+</p>
+
+<ul>
+  <li>Added a usage_history table</li>
+  <li>Tracked inventory usage over time</li>
+  <li>Created Usage Reports</li>
+  <li>Created Top Used Parts Reports</li>
+  <li>Implemented aggregate database queries</li>
+</ul>
+
+<h3>Skills Demonstrated</h3>
+
+<ul>
+  <li>Database Design</li>
+  <li>SQLite Development</li>
+  <li>Historical Data Tracking</li>
+  <li>Aggregate Queries</li>
+  <li>Reporting and Data Analysis</li>
+</ul>
+
 <h2>Narrative</h2>
 
 <h3>Artifact Description</h3>
 
 <p>
-The artifact I selected for this enhancement is my Android Inventory Application originally created in CS 360. The application stores inventory information using a local SQLite database and allows users to manage inventory through a mobile interface.
+The artifact I selected for this enhancement is my Android Inventory Management Application originally created in CS 360. The application stores inventory information using a SQLite database and allows users to manage inventory through a mobile interface. For this milestone, I focused on expanding the database functionality beyond basic CRUD operations.
 </p>
 
 <h3>Justification for Inclusion</h3>
 
 <p>
-I selected this artifact because database functionality is a major component of inventory management systems. The project provided an excellent opportunity to demonstrate database design, reporting, and historical data tracking.
+I selected this artifact because database functionality is a major component of inventory management systems. The original application stored inventory quantities but did not maintain historical records or provide reporting capabilities. This enhancement allowed me to demonstrate database design, reporting, and data analysis skills while improving the usefulness of the application.
 </p>
 
 <h3>Enhancement Overview</h3>
 
 <p>
-For this enhancement, I expanded the application's database functionality by adding inventory usage tracking and reporting features.
+The primary enhancement was the creation of a usage_history table. Whenever inventory is picked, the application now stores information such as part number, quantity used, ticket number, and transaction date. This creates a permanent historical record of inventory activity instead of only updating current inventory quantities.
 </p>
 
 <p>
-I created a new usage_history table that stores item information, quantity used, ticket numbers, and transaction dates whenever inventory is picked. This allows historical inventory activity to be retained instead of only storing current quantities.
-</p>
-
-<p>
-I also implemented a Usage Report feature and a Top Used Parts Report that retrieve and summarize inventory activity using stored database records.
+I also implemented a Usage Report feature that allows users to review inventory activity during selected date ranges. In addition, I created a Top Used Parts Report that identifies the most frequently used inventory items based on historical records.
 </p>
 
 <h3>Database Design and Reporting</h3>
 
 <p>
-The usage_history table creates a relationship between current inventory records and historical transactions. This design supports long-term reporting while maintaining current inventory quantities.
+The usage_history table provides a relationship between current inventory records and historical transactions. This design allows the application to maintain accurate inventory quantities while also supporting long-term reporting and analysis.
 </p>
 
 <p>
-The reporting features use aggregate database queries such as COUNT and SUM to calculate usage statistics and identify frequently used inventory items. These reports transform raw data into meaningful business information.
+The reporting features use aggregate database queries such as COUNT and SUM to calculate usage statistics and summarize inventory activity. These queries transform raw data into meaningful business information that supports decision-making.
 </p>
 
 <h3>Course Outcome Alignment</h3>
 
 <p>
-This enhancement demonstrates database design, data organization, reporting, and decision-support functionality. It also supports the development of computing solutions that provide value through effective data management and analysis.
+This enhancement demonstrates database design, data organization, reporting, and analysis skills. It also aligns with the Computer Science program outcome focused on implementing computing solutions that deliver value through effective use of data. The application now provides meaningful information beyond simple inventory storage by supporting historical tracking and reporting capabilities.
 </p>
 
 <h3>Challenges and Testing</h3>
 
 <p>
-One challenge was ensuring inventory quantities and usage history remained synchronized. Careful planning and testing were required to ensure transactions updated both inventory records and historical data correctly.
+One challenge was ensuring that inventory quantities and usage history records remained synchronized. Whenever inventory was picked, both the inventory table and the usage_history table needed to update correctly. Careful testing was required to ensure data consistency.
 </p>
 
 <p>
-Testing included verifying quantity updates, history record creation, summary statistics, and Top Used Parts reporting functionality.
+Testing included verifying quantity updates, creation of history records, report generation, date filtering, and Top Used Parts calculations. I confirmed that inventory quantities remained accurate while usage history continued to capture all transactions correctly.
 </p>
 
 <h3>Reflection</h3>
 
 <p>
-This enhancement helped me better understand how databases support real-world applications. The project now stores historical inventory activity, generates reports, summarizes usage information, and provides a more complete inventory management solution than the original version.
+This enhancement helped me better understand how databases support real-world business applications. The application now stores historical inventory activity, generates reports, summarizes usage information, and provides more value to users than the original version. This project reinforced the importance of database design and demonstrated how data can be transformed into useful information for decision-making.
 </p>
+
+</body>
+</html>
